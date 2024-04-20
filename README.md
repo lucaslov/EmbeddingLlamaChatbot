@@ -8,38 +8,46 @@ Funkcje:
 
 Inteligentny Specjalista: 
 Nasz agent oparty na silniku LLama jest specjalistą w różnych dziedzinach, które są realizowane na uczelni. 
-Dzięki analizie dostarczonych plików PDF, agent potrafi szybko odpowiedzieć na pytania i udzielić użytkownikowi potrzebnych informacji.
+Dzięki analizie dostarczonych plików PDF umieszczanych w katalogu 'data', agent potrafi szybko odpowiedzieć na pytania i udzielić użytkownikowi potrzebnych informacji.
 
-Wsparcie PDF: 
-Użytkownicy mogą dostarczać pliki PDF związane z przedmiotami realizowanymi na uczelni, które zostaną przetworzone przez silnik LLama i wykorzystane do wzbogacenia wiedzy agenta. 
-To pozwala na stałe aktualizowanie i rozwijanie bazy wiedzy czatu.
+Dokument "BSI_all.pdf" to obszerne źródło edukacyjne na temat bezpieczeństwa systemów komputerowych i informacyjnych, którego autorem jest dr Marek Miśkiewicz. Zawiera liczne tematy dotyczące metod szyfrowania, zasad bezpieczeństwa, bezpieczeństwa sieci i danych oraz zarządzania ryzykiem. Oto opis dokumentu, który może być przydatny do przedstawienia go wykładowcy:
 
-Interaktywność: Platforma oferuje interaktywny interfejs czatu, który umożliwia użytkownikom zadawanie pytań i uzyskiwanie odpowiedzi w czasie rzeczywistym. Dzięki temu użytkownicy mogą szybko rozwiązać problemy lub uzyskać niezbędne informacje.
+Przegląd Dokumentu BSI_all.pdf jako źródła danych:
 
-Personalizacja: Użytkownicy mają możliwość personalizacji ustawień czatu, takich jak preferowane dziedziny wiedzy, język interakcji czy sposób prezentacji odpowiedzi.
+Tytuł: Bezpieczeństwo Systemów Informatycznych
 
-Instrukcje użytkowania:
-Logowanie: Użytkownicy mogą założyć konto lub korzystać z platformy jako goście.
-Przesyłanie plików PDF: Aby wzbogacić bazę wiedzy agenta, użytkownicy mogą przesyłać pliki PDF związane z przedmiotami uczelnianymi poprzez odpowiednią funkcję czatu.
-Zadawanie pytań: Użytkownicy mogą zadawać pytania związane z przedmiotami akademickimi, na które agent odpowie na podstawie przetworzonej bazy wiedzy.
-Personalizacja: Użytkownicy mogą dostosować ustawienia czatu do swoich preferencji, co obejmuje wybór dziedzin wiedzy, język interakcji oraz inne parametry.
-Wymagania techniczne:
+Autor: dr Marek Miśkiewicz
 
-Silnik LLama
-Serwer obsługujący interakcje czatu
-Baza danych przechowująca pliki PDF i informacje związane z użytkownikami
+Rok: 2020
 
-Uruchomienie:
+Instytucja: Instytut Informatyki UMCS
 
-Sklonuj repozytorium z projektem.
-Zainstaluj niezbędne zależności.
-Skonfiguruj serwer oraz silnik LLama.
-Uruchom serwer obsługujący interakcje czatu.
-Zarejestruj się lub zaloguj na platformie.
-Rozpocznij korzystanie z funkcji czatu.
+Główne Tematy
+-Wprowadzenie do bezpieczeństwa systemów informacyjnych:
+-Podstawowe pojęcia i definicje dotyczące bezpieczeństwa, poufności, integralności i dostępności.
+-Znaczenie ochrony informacji jako cennego zasobu.
 
+Kryptografia:
+-Różne rodzaje kryptografii, w tym szyfrowanie symetryczne, asymetryczne i metody haszowania.
+-Specyficzne standardy szyfrowania, takie jak DES, AES i RSA.
+-Protokoły i standardy bezpieczeństwa:
+-Omówienie różnych protokołów, takich jak SSL, TLS oraz różne tryby działania szyfrów blokowych.
+-Przegląd infrastruktur klucza publicznego i standardów, takich jak seria ISO/IEC 27000.
 
+Bezpieczeństwo w sieci:
+-Podstawy bezpieczeństwa sieciowego i rola zapor ogniowych, systemów wykrywania intruzów (IDS) i bezpiecznych protokołów sieciowych.
+-Zarządzanie ryzykiem i polityki bezpieczeństwa:
+-Strategie zarządzania bezpieczeństwem w organizacji.
+-Znaczenie kompleksowych polityk bezpieczeństwa i audytów.
+-Aspekty prawne i etyczne bezpieczeństwa:
+-Przegląd praw związanych z cyberbezpieczeństwem.
+-Etyczne aspekty wdrażania środków bezpieczeństwa.
 
+Nowe trendy i wyzwania:
+-Dyskusja na temat ewoluującej natury zagrożeń cybernetycznych.
+-Wpływ nowych technologii na praktyki bezpieczeństwa.
 
-
+Cel i Zastosowanie
+-Dokument służy jako tekst podstawowy dla kursów dotyczących bezpieczeństwa systemów komputerowych i informacyjnych, oferując zarówno wiedzę teoretyczną, jak i praktyczne zastosowania. 
+Jest przeznaczony do użytku przez studentów w celach akademickich oraz praktyków do zwiększenia środków bezpieczeństwa w różnych systemach informacyjnych.
 
