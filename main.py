@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 
 from pinecone import Pinecone, ServerlessSpec
 from huggingface_hub import hf_hub_download
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
-index_name = "BSI-index"
+index_name = "bsi-index"
 load_dotenv()
 PINECONE_KEY = os.getenv('PINECONE_KEY')
 
@@ -19,15 +19,15 @@ texts = text_splitter.split_documents(data)
 
 # connect to pinecone and create index
 pc = Pinecone(api_key=PINECONE_KEY)
-pc.create_index(
-    name=index_name,
-    dimension=1536,
-    metric="euclidean",
-    spec=ServerlessSpec(
-        cloud="aws",
-        region="us-east-1"
-    ) 
-)
+# pc.create_index(
+#     name=index_name,
+#     dimension=1536,
+#     metric="euclidean",
+#     spec=ServerlessSpec(
+#         cloud="aws",
+#         region="us-east-1"
+#     ) 
+# )
 pinecone_index = pc.Index(index_name)
 
 embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
