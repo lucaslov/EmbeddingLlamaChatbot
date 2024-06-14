@@ -1,53 +1,60 @@
-Projekt EmbeddingLlamaChatbot - README
+# Embedding Llama Chatbot
 
-Opis:
-Projekt EmbeddingLlamaChatbot jest platformą czatu, która wykorzystuje silnik LLama do tworzenia inteligentnego agenta, który pełni rolę specjalisty z przedmiotów realizowanych na uczelni. 
-Inspirując się rozwiązaniami podobnymi do OpenAI, nasz projekt ma na celu dostarczenie interaktywnej i skutecznej platformy komunikacyjnej, która umożliwia użytkownikom uzyskanie szybkich i precyzyjnych odpowiedzi na pytania związane z tematami akademickimi.
+Embedding Llama Chatbot is an application designed to help students learn university courses through an interactive chat interface. The application features a backend built with FastAPI and a frontend developed using Streamlit. This project is tested with Python 3.11.
 
-Funkcje:
+## Table of Contents
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
 
-Inteligentny Specjalista: 
-Nasz agent oparty na silniku LLama jest specjalistą w różnych dziedzinach, które są realizowane na uczelni. 
-Dzięki analizie dostarczonych plików PDF umieszczanych w katalogu 'data', agent potrafi szybko odpowiedzieć na pytania i udzielić użytkownikowi potrzebnych informacji.
+## Features
+- Interactive chat interface to aid in learning university courses.
+- Backend powered by FastAPI.
+- Frontend developed using Streamlit.
+- Integration with LLama model for natural language processing.
 
-Dokument "BSI_all.pdf" to obszerne źródło edukacyjne na temat bezpieczeństwa systemów komputerowych i informacyjnych, którego autorem jest dr Marek Miśkiewicz. Zawiera liczne tematy dotyczące metod szyfrowania, zasad bezpieczeństwa, bezpieczeństwa sieci i danych oraz zarządzania ryzykiem. Oto opis dokumentu, który może być przydatny do przedstawienia go wykładowcy:
+## Requirements
+- Python 3.11
+- LLama model
 
-Przegląd Dokumentu BSI_all.pdf jako źródła danych:
+## Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/lucaslov/EmbeddingLlamaChatbot.git
+    cd llama-chat-bot
+    ```
 
-Tytuł: Bezpieczeństwo Systemów Informatycznych
+2. (Optional) Create and activate a new environment using Conda:
+    ```sh
+    conda create --name llama-chat-bot python=3.11
+    conda activate llama-chat-bot
+    ```
 
-Autor: dr Marek Miśkiewicz
+3. Download the LLama model and place it in the root directory. You can use the following model as an example:
+    [LLama-2-13B-chat-GGUF](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/blob/main/llama-2-13b-chat.Q2_K.gguf)
 
-Rok: 2020
+4. Modify the `--model` parameter in `run.py` to point to the path of the downloaded model:
+    ```python
+    --model /path/to/your/model
+    ```
 
-Instytucja: Instytut Informatyki UMCS
+## Usage
+To run the application, use the following command:
+```sh
+python run.py
+```
 
-Główne Tematy
--Wprowadzenie do bezpieczeństwa systemów informacyjnych:
--Podstawowe pojęcia i definicje dotyczące bezpieczeństwa, poufności, integralności i dostępności.
--Znaczenie ochrony informacji jako cennego zasobu.
+## Configuration
 
-Kryptografia:
--Różne rodzaje kryptografii, w tym szyfrowanie symetryczne, asymetryczne i metody haszowania.
--Specyficzne standardy szyfrowania, takie jak DES, AES i RSA.
--Protokoły i standardy bezpieczeństwa:
--Omówienie różnych protokołów, takich jak SSL, TLS oraz różne tryby działania szyfrów blokowych.
--Przegląd infrastruktur klucza publicznego i standardów, takich jak seria ISO/IEC 27000.
+The `main.py` file located in the background can take the following parameters:
 
-Bezpieczeństwo w sieci:
--Podstawy bezpieczeństwa sieciowego i rola zapor ogniowych, systemów wykrywania intruzów (IDS) i bezpiecznych protokołów sieciowych.
--Zarządzanie ryzykiem i polityki bezpieczeństwa:
--Strategie zarządzania bezpieczeństwem w organizacji.
--Znaczenie kompleksowych polityk bezpieczeństwa i audytów.
--Aspekty prawne i etyczne bezpieczeństwa:
--Przegląd praw związanych z cyberbezpieczeństwem.
--Etyczne aspekty wdrażania środków bezpieczeństwa.
+- `--pdf_file`: The PDF file to load (default is `'ipb4.pdf'`).
+- `--temperature`: The temperature for the LlamaCPP model (default is `0.1`).
+- `--model_path`: The path to the LlamaCPP model.
 
-Nowe trendy i wyzwania:
--Dyskusja na temat ewoluującej natury zagrożeń cybernetycznych.
--Wpływ nowych technologii na praktyki bezpieczeństwa.
-
-Cel i Zastosowanie
--Dokument służy jako tekst podstawowy dla kursów dotyczących bezpieczeństwa systemów komputerowych i informacyjnych, oferując zarówno wiedzę teoretyczną, jak i praktyczne zastosowania. 
-Jest przeznaczony do użytku przez studentów w celach akademickich oraz praktyków do zwiększenia środków bezpieczeństwa w różnych systemach informacyjnych.
+Example usage:
+```sh
+python main.py --pdf_file my_course.pdf --temperature 0.5 --model_path /path/to/your/model
 
